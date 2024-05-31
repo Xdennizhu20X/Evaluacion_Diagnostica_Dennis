@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante UIDE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
+</head>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+        
+
+    
+
+<nav class="bg-black border-gray-200 fixed w-full z-50 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="logo.png" class="h-16" alt="Flowbite Logo" />
+          
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col  p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-black ">
+          <li>
+            <a href="#" class="block py-2 px-3 text-[#EBE2CD] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#EAAA02] md:p-0" aria-current="page">Inicio</a>
+          </li>
+          <li>
+            <a href="#nosotros" class="block py-2 px-3 text-[#EBE2CD] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#EAAA02] md:p-0">Nosotros</a>
+          </li>
+          <li>
+            <a href="#menu" class="block py-2 px-3 text-[#EBE2CD] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#EAAA02] md:p-0 ">Menú</a>
+          </li>
+
+          <li>
+            <a href="#contacto" class="block py-2 px-3 text-[#EBE2CD] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#EAAA02] md:p-0 ">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+
+<section id="indicators-carousel" class="relative w-full h-[90%] pt-24" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden  md:h-screen">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="image1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://media.admagazine.com/photos/651aeed9da5f4d9a3844a94b/4:3/w_2660,h_1995,c_limit/Porten%CC%83o-restaurante-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="image3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-24 rounded-full bg-white/10  group-hover:bg-white/20 ">
+            <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-24 rounded-full bg-white/10  group-hover:bg-white/20  ">
+            <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</section>
+
+<section id="nosotros" class="w-full flex flex-col text-center justify-center items-center p-10 bg-black">
+    
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-[#EAAA02] md:text-5xl lg:text-6xl ">Nosotros</h1>
+    <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl px-16  sm:w-[65%] ">Bienvenidos al Restaurante de la Universidad Internacional del Ecuador (UIDE), donde la pasión por la gastronomía se encuentra con el espíritu académico. Ubicado en el corazón de nuestro vibrante campus, nuestro restaurante no es solo un lugar para comer, sino un espacio para disfrutar de experiencias culinarias excepcionales en un ambiente acogedor y moderno.</p>
+
+
+</section>
+
+<section id="menu"  class="p-10 bg-black">
+
+    <h1 class="text-5xl text-center py-10 text-[#EAAA02]">Menú</h1>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="relative overflow-hidden max-w-full rounded-lg sm:h-80 group">
+            <img class="sm:h-80 w-full object-cover" src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/144ff6fad3865ecc6d5d5d3a0daacd06.jpg" alt="">
+            <span class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p>
+                    HORNADO
+                </p>
+                <p>Mediano----------2.50$</p>
+                <p>Grande-----------4.00$</p>
+        </span>
+            
+        </div>
+        <div class="relative overflow-hidden max-w-full rounded-lg sm:h-80 group">
+            <img class="sm:h-80 w-full object-cover" src="https://www.laylita.com/recetas/wp-content/uploads/Repe-lojano-receta.jpg" alt="">
+            <span class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p>
+                    REPE
+                </p>
+                <p>Mediano----------1.50$</p>
+                <p>Grande-----------3.00$</p>
+        </span>
+            
+        </div>
+
+        <div class="relative overflow-hidden max-w-full rounded-lg sm:h-80 group">
+            <img class="sm:h-80 w-full object-cover" src="https://www.eluniverso.com/resizer/puT3tFV4An39Hn6-pktlCZVHFN0=/1005x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/QSEP36JJINARHAWMPQL6VVP5NQ.jpg" alt="">
+            <span class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p>
+                    FRITADA
+                </p>
+                <p>Mediano----------2.50$</p>
+                <p>Grande-----------4.50$</p>
+        </span>
+            
+        </div>
+        <div class="relative overflow-hidden max-w-full rounded-lg sm:h-80 group">
+            <img class="sm:h-80 w-full object-cover" src="https://www.laylita.com/recetas/wp-content/uploads/2008/02/Seco-de-gallina-o-pollo-receta-1024x768.jpg" alt="">
+            <span class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p>
+                    ARROZ CON POLLO
+                </p>
+                <p>Mediano----------2.50$</p>
+                <p>Grande-----------3.50$</p>
+        </span>
+            
+        </div>
+        <div class="relative overflow-hidden max-w-full rounded-lg sm:h-80 group">
+            <img class="sm:h-80 w-full object-cover" src="https://comidaecuatoriana.online/wp-content/uploads/2022/06/receta-de-sancocho.jpg" alt="">
+            <span class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p>
+                    SANCOCHO
+                </p>
+                <p>Mediano----------2.50$</p>
+                <p>Grande-----------4.50$</p>
+        </span>
+            
+        </div>
+        <div class="relative overflow-hidden max-w-full rounded-lg sm:h-80 group">
+            <img class="sm:h-80 w-full object-cover" src="https://www.tqma.com.ec/images/com_yoorecipe/banner_superior/1502_1.jpg" alt="">
+            <span class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p>
+                    TAMALES
+                </p>
+                <p>Unidad----------1.00$</p>
+        </span>
+            
+        </div>
+        <div class="relative overflow-hidden max-w-full rounded-lg sm:h-80 group">
+            <img class="sm:h-80 w-full object-cover" src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/fb1073a76175fe59c4b1a5834cbc1440.jpg" alt="">
+            <span class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p>
+                    BOLON
+                </p>
+                <p>Unidad----------1.00$</p>
+        </span>
+            
+        </div>
+        <div class="relative overflow-hidden max-w-full rounded-lg sm:h-80 group">
+            <img class="sm:h-80 w-full object-cover" src="https://www.bonella.com.ec/-/media/Project/Upfield/Brands/Rama/Rama-EC/Assets/Recipes/sync-img/e61e18bb-b9f0-4fb1-8146-0b71a37f3f2a.jpg?rev=755683ba69cf41ef86783b35a6dcc030" alt="">
+            <span class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p>
+                    QUIMBOLITO
+                </p>
+                <p>Unidad----------1.00$</p>
+        </span>
+            
+        </div>
+        <div class="relative overflow-hidden max-w-full rounded-lg sm:h-80 group">
+            <img class="sm:h-80 w-full object-cover" src="https://www.goya.com/media/3733/empanadas-de-viento-ecuadorian-style-cheese-empanadas.jpg?quality=80" alt="">
+            <span class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p>
+                    EMPANADAS DE VIENTO
+                </p>
+                <p>X3----------1.00$</p>
+        </span>
+            
+        </div>
+
+
+
+
+ 
+
+
+
+
+    </div>
+
+</section>
+
+<section id="contacto" class="bg-black p-10">
+
+    <h1 class="text-5xl text-center  text-[#EAAA02]">Contacto</h1>
+
+
+    <form class="max-w-md mx-auto">
+        <div class="grid md:grid-cols-1 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#EAAA02] peer" placeholder=" " required />
+                <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#EAAA02] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombres</label>
+            </div>
+          </div>
+        <div class="relative z-0 w-full mb-5 group">
+            <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-[#EAAA02] peer" placeholder=" " required />
+            <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#EAAA02]  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Correo</label>
+        </div>
+
+        <div class="grid md:grid-cols-1 md:gap-6">
+
+          <div class="relative z-0 w-full mb-5 group">
+            <label for="message" class="block mb-2 text-sm font-medium text-[#EAAA02]">Mensaje</label>
+            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-[#EBE2CD] rounded-lg border border-gray-300 focus:ring-[#EAAA02] focus:border-[#EAAA02] " placeholder="Deja tu mensaje"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="text-white bg-[#EAAA02] hover:bg-[#EAAA02] focus:ring-4 focus:outline-none focus:ring-[#EAAA02] font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit</button>
+      </form>
+      
+</section>
+
+
+  
+    
+</body>
+</html>
